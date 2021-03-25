@@ -1,2 +1,3 @@
-# compilers-book
-A Book on Compilers
+# discrete-math-book
+
+A Book on Discrete Mathematics
