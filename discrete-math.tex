@@ -1,0 +1,63 @@
+% discrete-math.tex
+
+% !TEX program = xelatex
+\documentclass[a4paper, british]{memoir}
+
+\usepackage{style}       % Custom style
+\usepackage{mnfrontpage} % Front page
+\usepackage{xeCJK}
+
+\title{离散数学讲义}
+% \subtitle{}
+\author{2020 软件学院学生}
+\date{\today}
+% \kind{Report \#17\hfill\the\year} % Optional
+
+% \includeonly {
+%   chapters/abstract,
+%   chapters/acks,
+%   chapters/0-overview/0-overview,
+%   chapters/1-prop-logic/1-prop-logic,
+%   chapters/1-prop-logic/1-prop-logic-intro,
+%   chapters/2-predicate-logic,
+%   chapters/3-induction,
+% }
+
+\begin{document}
+  \frontmatter        % Folios in Roman numerals, unnumbered chapters.
+  \mnfrontpage
+
+  \include{chapters/abstract}
+  \include{chapters/acks}
+
+  \cleartorecto
+  \tableofcontents    % or \tableofcontents*
+  \cleartorecto
+  \listoffigures      % or \listoffigures*
+  \cleartorecto
+  \listoftables       % or \listoftables*
+
+  \mainmatter         % Folios in Arabic numerals, numbered chapters.
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \include{chapters/0-overview}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \part{Part I: 逻辑与证明}
+    \include{chapters/1-prop-logic/1-prop-logic}
+    \include{chapters/2-predicate-logic/2-predicate-logic}
+    \include{chapters/3-induction/3-induction}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \part{Part II: 集合论}
+    % \include{chapters/}
+    % \include{chapters/}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \appendix
+  \appendixpage  % similar to \part*{Appendices}, but appears in TOC.
+
+  % \include{sections/appendixA}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \backmatter         % Folios in Arabic numerals, unnumbered chapters.
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \printbibliography
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
