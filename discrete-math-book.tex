@@ -1,0 +1,45 @@
+% discrete-math-book.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[cn,11pt,chinese]{elegantbook}
+\input{preamble}
+
+\title{离散数学讲义}
+% \subtitle{}
+
+\author{软件学院 2020级学生}
+\institute{南京大学}
+\date{2021年3月27日 $\sim$ \zhtoday}
+\version{3.14}
+% \bioinfo{自定义}{信息}
+% \extrainfo{}
+
+\logo{logo-blue.png}
+\cover{cover.jpg}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+\frontmatter
+
+\chapter*{前言}
+\markboth{Introduction}{前言}
+\fig{width = 0.80\linewidth}{figs/writing-a-book}
+
+\vskip 1.5cm
+\begin{flushright}
+  魏恒峰 (hfwei@nju.edu.cn) \\
+  2021年3月27日
+\end{flushright}
+
+\tableofcontents
+%\listofchanges
+%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+
+\input{chapters/0-overview/0-overview}
+\input{chapters/1-prop-logic/1-prop-logic}
+\input{chapters/2-predicate-logic/2-predicate-logic}
+\input{chapters/3-induction/3-induction}
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

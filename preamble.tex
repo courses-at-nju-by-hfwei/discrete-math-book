@@ -1,0 +1,44 @@
+% preamble.tex
+
+\usepackage{array}
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+
+\newcommand{\set}[1]{\{#1\}}
+\newcommand{\bset}[1]{\big\{#1\big\}}
+\newcommand{\Bset}[1]{\Big\{#1\Big\}}
+\DeclareMathOperator*{\argmin}{\arg\!\min}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\U}{\mathcal{U}}
+
+% nature deduction: #1: premise; #2: conclusion; #3: name
+\newcommand{\nd}[3]{\frac{\quad#1\quad}{\quad#2\quad} \quad (#3)}
+\newcommand{\ndnoname}[2]{\frac{\quad#1\quad}{\quad#2\quad}}
+
+% for fig without caption: #1: width/size; #2: fig file
+\newcommand{\fig}[2]{
+  \begin{figure}[htbp]
+    \centering
+    \includegraphics[#1]{#2}
+  \end{figure}
+}
+% for fig with caption: #1: width/size; #2: fig file; #3: caption
+\newcommand{\figcap}[3]{
+  \begin{figure}[htbp]
+    \centering
+    \includegraphics[#1]{#2}
+    \caption{#3}
+  \end{figure}
+}
+% for fig with both caption and label: #1: width/size; #2: fig file; #3: caption; #4: label
+\newcommand{\figcaplbl}[4]{
+  \begin{figure}[htbp]
+    \centering
+    \includegraphics[#1]{#2}
+    \caption{#3}
+    \label{#4}
+  \end{figure}
+}
